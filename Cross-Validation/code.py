@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 
 train_data = pd.read_csv('../input/train.csv', index_col='Id')
 test_data = pd.read_csv('../input/test.csv', index_col='Id')
-
+# hello oan Bohdan!
 train_data.dropna(axis=0, subset=['SalePrice'], inplace=True)
 y = train_data.SalePrice              
 train_data.drop(['SalePrice'], axis=1, inplace=True)
